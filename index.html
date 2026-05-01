@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Amies Fashion - Αρχική</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="logo.png" alt="Les Amies Fashion Logo" class="main-logo">
+            <h1>Les Amies Fashion</h1>
+            <p>Ολοκληρωμένο Πληροφοριακό Σύστημα Διαχείρισης</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Αρχική</a>
+            <a href="catalog_admin.html">Διαχείριση Καταλόγου</a>
+            <a href="production.html">Προδιαγραφές Παραγωγής</a>
+            <a href="order_status.html">Κατάσταση Παραγγελιών</a>
+            <a href="edithistory.html">Ιστορικό Παραγγελιών</a>
+        </nav>
+
+        <div class="content">
+            <section class="login-container">
+                <h2>Είσοδος Χρήστη</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label>Όνομα Χρήστη:</label>
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Κωδικός Πρόσβασης:</label>
+                        <input type="password" name="password" class="full-width-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Επιλογή Ιδιότητας:</label>
+                        <select name="role" class="full-width-input">
+                            <option value="owner">Ιδιοκτήτρια / Σχεδιάστρια</option>
+                            <option value="customer">Πελάτης (Λιανικό Κατάστημα)</option>
+                            <option value="production">Τμήμα Παραγωγής</option>
+                            <option value="shipping">Υπεύθυνος Αποστολών</option>
+                             <option value="finance">Υπεύθυνος Οικονομικών</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Είσοδος</button>
+                </form>
+            </section>
+
+            <br><hr><br>
+
+            <div class="action-section">
+                <h2>Επιλέξτε Ενέργεια προς Πραγματοποίηση</h2>
+                <p>Μετά την αυθεντικοποίηση, μπορείτε να μεταβείτε στις παρακάτω λειτουργίες:</p>
+                
+                <div class="action-buttons-container">
+                    <a href="catalog_admin.html" class="btn-secondary">Διαχείριση Καταλόγου</a>
+                    <a href="order_status.html" class="btn-secondary">Παρακολούθηση Παραγγελίας</a>
+                    <a href="production.html" class="btn-secondary">Προδιαγραφές Παραγωγής</a>
+                    <a href="edithistory.html" class="btn-secondary">Προβολή Ιστορικού</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
