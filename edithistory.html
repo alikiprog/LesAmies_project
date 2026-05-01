@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Ιστορικό Συναλλαγών - Les Amies Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Ιστορικό Παραγγελιών</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Αρχική</a>
+            <a href="catalog_admin.html">Διαχείριση Καταλόγου</a>
+            <a href="production.html">Προδιαγραφές Παραγωγής</a>
+            <a href="order_status.html">Κατάσταση Παραγγελιών</a>
+        </nav>
+
+        <div class="content">
+            <h2>Ιστορικό Παραγγελιών</h2>
+            
+            <div class="search-container">
+                <div class="search-filters">
+                    <div class="form-group">
+                        <label>Από Ημερομηνία:</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Πελάτης:</label>
+                        <input type="text" placeholder="Όνομα καταστήματος...">
+                    </div>
+                    <button type="button" class="btn-primary">Αναζήτηση</button>
+                </div>
+            </div>
+
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>ID Παραγγελίας</th>
+                        <th>Ημερομηνία</th>
+                        <th>Πελάτης</th>
+                        <th>Σύνολο (€)</th>
+                        <th>Κατάσταση</th>
+                        <th>Ενέργειες</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#LA-5021</td>
+                        <td>28/04/2026</td>
+                        <td>Luxury Boutique</td>
+                        <td>450.00</td>
+                        <td><span class="status-badge ready">Εξοφλήθηκε</span></td>
+                        <td>  
+                          <button type="button" class="btn-action btn-secondary">Λεπτομέρειες</button>
+                          <button type="button" class="btn-action btn-primary">Αντιγραφή σε νέα παραγγελία</button>
+                          <button type="button" class="btn-action btn-secondary">Επανέκδοση σχεδίου</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#LA-5018</td>
+                        <td>25/04/2026</td>
+                        <td>Fleurs de L'art</td>
+                        <td>1,200.00</td>
+                        <td><span class="status-badge shipping">Απεστάλη</span></td>
+                        <td>
+                            <button type="button" class="btn-action btn-secondary">Λεπτομέρειες</button>
+                            <button type="button" class="btn-action btn-primary">Αντιγραφή σε νέα παραγγελία</button>
+                            <button type="button" class="btn-action btn-secondary">Επανέκδοση σχεδίου</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
