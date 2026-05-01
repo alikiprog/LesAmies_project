@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Amies - Διαχείριση Καταλόγου</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Διαχείριση Καταλόγου Προϊόντων</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Αρχική</a>
+            <a href="order_status.html">Κατάσταση Παραγγελιών</a>
+            <a href="production.html">Προδιαγραφές Παραγωγής</a>
+            <a href="edithistory.html">Ιστορικό Παραγγελιών</a>
+        </nav>
+
+        <div class="content">
+            <section class="admin-section">
+                <h2>1. Προσθήκη Νέου Προϊόντος</h2>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label>Όνομα Προϊόντος:</label>
+                            <input type="text" name="pname" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Υλικό:</label>
+                            <input type="text" name="material" placeholder="π.χ. Χρυσός 14Κ" required> 
+                        </div>
+                        <div class="form-group">
+                            <label>Χρώματα:</label>
+                            <input type="text" name="colors" placeholder="π.χ. Gold & White"> 
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Μέγεθος / Διαστάσεις:</label>
+                            <input type="text" name="dimensions" placeholder="π.χ. 3cm"> 
+                        </div>
+                        <div class="form-group">
+                            <label>Αρχείο Φωτογραφίας:</label>
+                            <input type="file" name="pimage">
+                        </div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button type="submit" class="btn-secondary">Αυτόματη Δημιουργία Κωδικού</button> 
+                        <button type="submit" class="btn-primary">Αποθήκευση Προϊόντος</button> 
+                    </div>
+                </form>
+            </section>
+
+            <br><hr><br>
+
+            <h2>2. Επεξεργασία Υπαρχόντων Προϊόντων</h2>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Εικόνα</th>
+                        <th>Κωδικός</th>
+                        <th>Υλικό</th>
+                        <th>Χρώματα</th>
+                        <th>Διαστάσεις</th>
+                        <th>Ενέργεια</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="earingsgold.jpg" class="prod-img" alt="Σκουλαρίκια"></td>
+                        <td><strong>LA-492</strong></td>
+                        <td>Χρυσός 14Κ</td>
+                        <td>Gold & White</td>
+                        <td>3cm</td>
+                        <td><button type="button" class="btn-edit">Επεξεργασία</button></td> 
+                    </tr>
+                    <tr>
+                        <td><img src="necklacewhite.jpg" class="prod-img" alt="Κολιέ"></td>
+                        <td><strong>LA-122</strong></td>
+                        <td>Επιχρυσωμένο</td>
+                        <td>Gold & White</td>
+                        <td>No 54</td>
+                        <td><button type="button" class="btn-edit">Επεξεργασία</button></td> 
+                    </tr>
+                    <tr>
+                        <td><img src="blueear.jpg" class="prod-img" alt="Σκουλαρίκια καρδιά"></td>
+                        <td><strong>LA-138</strong></td>
+                        <td>Επιχρυσωμένο</td>
+                        <td>Shades of blue</td>
+                        <td>3cm</td>
+                        <td><button type="button">Επεξεργασία</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="girlnecklace.jpg" class="prod-img" alt="Κολιέ φτερό"></td>
+                        <td><strong>LA-443</strong></td>
+                        <td>Επιχρυσωμένο & πλεκτό</td>
+                        <td>Gold & mix of colors </td>
+                        <td>No 54</td>
+                        <td><button type="button">Επεξεργασία</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="summerbracelet.jpg" class="prod-img" alt="Βραχιόλι"></td>
+                        <td><strong>LA-58</strong></td>
+                        <td>Επιχρυσωμένο & πλεκτό</td>
+                        <td>Blue & black set</td>
+                        <td>14cm</td>
+                        <td><button type="button">Επεξεργασία</button></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

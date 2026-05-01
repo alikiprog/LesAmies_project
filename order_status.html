@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Amies - Κατάσταση Παραγγελιών</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Παρακολούθηση Κατάστασης Παραγγελιών</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Αρχική</a>
+            <a href="catalog_admin.html">Διαχείριση Καταλόγου</a>
+            <a href="edithistory.html">Ιστορικό Παραγγελιών</a>
+            <a href="production.html">Προδιαγραφές Παραγωγής</a>
+        </nav>
+
+        <div class="content">
+            <h2>Λίστα Ενεργών Παραγγελιών</h2>
+            
+            <div class="search-container">
+                <label for="order-search">Αναζήτηση Κωδικού:</label>
+                <input type="text" id="order-search" placeholder="π.χ. #ORD-1020">
+                <button type="submit" class="btn-edit">Αναζήτηση</button>
+            </div>
+
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>ID Παραγγελίας</th>
+                        <th>Πελάτης</th>
+                        <th>Ημερομηνία</th>
+                        <th>Κατάσταση</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>#ORD-1024</td><td>Κοσμήματα "Αύρα"</td><td>25/04/2026</td><td><span class="status-badge processing">Σε Παραγωγή</span></td></tr>
+                    <tr><td>#ORD-1023</td><td>Luxury Boutique</td><td>24/04/2026</td><td><span class="status-badge ready">Έτοιμη</span></td></tr>
+                    <tr><td>#ORD-1022</td><td>Elegant Shop</td><td>22/04/2026</td><td><span class="status-badge shipping">Σε Αποστολή</span></td></tr>
+                    <tr><td>#ORD-1021</td><td>Poco Loco Jewellery</td><td>20/04/2026</td><td><span class="status-badge processing">Σε Παραγωγή</span></td></tr>
+                    <tr><td>#ORD-1020</td><td>Fleurs de L'art</td><td>18/04/2026</td><td><span class="status-badge processing">Σε Παραγωγή</span></td></tr>
+                    <tr><td>#ORD-1019</td><td>Voulgaris Store</td><td>17/04/2026</td><td><span class="status-badge ready">Έτοιμη</span></td></tr>
+                    <tr><td>#ORD-1018</td><td>My Accessory</td><td>15/04/2026</td><td><span class="status-badge shipping">Σε Αποστολή</span></td></tr>
+                    <tr><td>#ORD-1017</td><td>Golden Touch</td><td>12/04/2026</td><td><span class="status-badge processing">Σε Παραγωγή</span></td></tr>
+                    <tr><td>#ORD-1016</td><td>Blue Diamond</td><td>10/04/2026</td><td><span class="status-badge ready">Έτοιμη</span></td></tr>
+                    <tr><td>#ORD-1015</td><td>Velvet Case</td><td>08/04/2026</td><td><span class="status-badge shipping">Σε Αποστολή</span></td></tr>
+                    <tr><td>#ORD-1014</td><td>Chic Ornaments</td><td>05/04/2026</td><td><span class="status-badge processing">Σε Παραγωγή</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
