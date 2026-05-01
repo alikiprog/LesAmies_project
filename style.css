@@ -1,0 +1,325 @@
+/* 1. ΕΙΔΙΚΕΣ ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΗΝ INDEX ΣΕΛΙΔΑ */
+
+.main-logo {
+    width: 150px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-container {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1.5px dashed #d5a5a9; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.full-width-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #dfc9d2;
+    box-sizing: border-box;
+    background-color: #fcf8f9;
+}
+
+.action-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.action-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.action-buttons-container .btn-secondary {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* 2. ΓΕΝΙΚΟ ΣΤΥΛ & ΔΟΜΗ (WRAPPER, NAV, κλπ) */
+
+body {
+    background-color: #fff6f6; 
+    font-family: Verdana, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    color: #4a3e3d;
+}
+
+#wrapper {
+    width: 900px;
+    margin: 20px auto; 
+    background-color: #ffffff;
+    border: 1.5px solid #e2c0c4; 
+    box-shadow: 0px 0px 20px rgba(226, 192, 196, 0.3);
+    min-height: 600px;
+    border-radius: 8px;
+}
+
+header {
+    background-color: #eedadb; 
+    color: #5c4346; 
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #e5b4b9;
+}
+
+header h1 {
+    margin: 10px 0 5px 0;
+    font-size: 1.8em;
+}
+
+nav {
+    background-color: #eedadb;
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom: 1.5px solid #e5b4b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+}
+
+nav a {
+    color: #5c4346;
+    text-decoration: none;
+    padding: 8px 10px; 
+    font-weight: bold;
+    font-size: 0.85em; 
+    border-radius: 4px;
+    white-space: nowrap; 
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #eac8ca;
+    color: #5c4346;
+}
+.content {
+    padding: 30px;
+}
+
+/* 3. ΦΟΡΜΕΣ & ΣΤΟΙΧΕΙΑ ΔΙΑΧΕΙΡΙΣΗΣ  */
+   
+.admin-section {
+    background-color: #fcf8f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1.5px dashed #d5a5a9;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: #5c4346;
+}
+
+input[type="text"], input[type="file"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfc9d2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #fff9f9;
+}
+
+/* 4. ΚΟΥΜΠΙΑ (Buttons) */
+
+.btn-primary {
+    background-color: #c48b89; /* Απαλό rose gold χρώμα */
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: opacity 0.3s;
+}
+
+.btn-secondary {
+    background-color: #eedadb;
+    padding: 10px 20px;
+    border: 1px solid #dfc9d2;
+    color: #5c4346;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: opacity 0.3s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.85;
+}
+
+
+   /* 5. ΠΙΝΑΚΕΣ & ΚΑΤΑΣΤΑΣΕΙΣ */
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th {
+    background-color: #eedadb;
+    color: #5c4346;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #e5b4b9;
+}
+
+.product-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #eedadb;
+}
+
+.prod-img {
+    width: 150px;
+    border-radius: 6px;
+    border: 1.5px solid #eac8ca;
+}
+
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.processing { background-color: #e29578; } 
+.ready { background-color: #a3b18b; }     
+.shipping { background-color: #83c5be; }  
+
+.search-container {
+    background-color: #fcf8f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #eedadb;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8b5d61; 
+    border-bottom: 2px solid #e2c0c4;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.status-completed {
+    color: #7da172; 
+    font-weight: bold;
+}
+
+.search-filters {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.spec-card {
+    background-color: #fcf8f9;
+    border: 1.5px dashed #d5a5a9; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #5c4346;
+}
+
+.spec-card hr {
+    border: 0;
+    border-top: 1px solid #eedadb;
+    margin: 10px 0;
+}
+
+.tech-detail {
+    margin-top: 15px;
+}
+
+.comment {
+    color: #b5838d;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* 6. ΠΡΟΔΙΑΓΡΑΦΕΣ ΠΑΡΑΓΩΓΗΣ & ΕΙΚΟΝΕΣ  */
+
+.spec-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.spec-text {
+    flex: 1;
+}
+
+.spec-photo-container {
+    text-align: center;
+    width: 150px;
+}
+
+.photo-title {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #5c4346;
+    margin-bottom: 5px;
+}
+
+.spec-photo {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #e2c0c4;
+    border-radius: 6px;
+}
+/* Στυλ για τα κουμπιά ενεργειών ιστορικού */
+.btn-action {
+    width: 100%;
+    max-width: 195px; 
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 0.85em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
